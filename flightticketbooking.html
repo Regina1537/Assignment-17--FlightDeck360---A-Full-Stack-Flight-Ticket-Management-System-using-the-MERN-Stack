@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="APP.CSS">
+    <link rel="icon" type="https://i.pinimg.com/736x/62/44/56/624456b8b28031fc28cf407947f413e1.jpg"
+    <title>FLIGHT TICKET DECK 360 MANAGEMENT</title>
+  </head>
+  <body>
+    <div className="booking-form card">
+        <h2>Book Your Flight Ticket</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-row">
+            <label>Passenger Name</label> 
+            <input
+              className="input"
+              type="text"
+              name="passengerName" 
+              value={formData.passengerName}
+              onChange={handleChange}
+              required 
+            /></div> <br>
+
+        <div className="grid-2 form-row">
+          <div>
+            <label>Contact</label>
+            <input
+              className="input"
+              type="text"
+              name="contact"
+              value={formData.contact}
+              onChange={handleChange}
+              required
+            />
+          </div> <br>
+          <div>
+            <label>Email</label>
+            <input
+              className="input"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div> <br>
+        </div>
+
+        <div className="grid-2 form-row">
+          <div>
+            <label>Flight Number</label>
+            <input
+              className="input"
+              type="text"
+              name="flightNumber"
+              value={formData.flightNumber}
+              onChange={handleChange}
+              required
+            />
+          </div> <br>
+
+          <div>
+            <label>Journey Date</label>
+            <input
+              className="input"
+              type="date"
+              name="journeyDate"
+              value={formData.journeyDate}
+              onChange={handleChange}
+              required
+            />
+          </div> <br>
+        </div>
+
+        <div className="grid-2 form-row">
+          <div>
+            <label>From</label>
+            <input
+              className="input"
+              type="text"
+              name="from"
+              value={formData.from}
+              onChange={handleChange}
+              required
+            />
+          </div> <br>
+          <div>
+            <label>To</label>
+            <input
+              className="input"
+              type="text"
+              name="to"
+              value={formData.to}
+              onChange={handleChange}
+              required
+            />
+          </div> <br>
+        </div>
+
+        <div className="form-row">
+          <label>Total Passengers</label>
+          <input
+            className="input"
+            type="number"
+            min="1"
+            name="totalPassengers"
+            value={formData.totalPassengers}
+            onChange={handleChange}
+          />
+        </div> <br>
+
+        <div className="form-row">
+          <label>
+            <input
+              type="checkbox"
+              name="assistanceRequired"
+              checked={formData.assistanceRequired}
+              onChange={handleChange}
+            />
+            Assistance Required
+          </label>
+        </div> <br>
+
+        <button className="btn btn-secondary" type="submit">
+          Submit Booking
+        </button> <br>
+        <button className="btn btn-Success" type="Confirmed">
+            Confirmed
+          </button> <br>
+      </form>
+    </div>
+    <footer className="footer">© {15/09().getFullYear2025()} FlightDeck360. Flight Ticket Booking form Application! All rights reserved.</footer>
+</div>
+
+<script src="./Booking.js"></script>
+    
+</body>
+</html>
